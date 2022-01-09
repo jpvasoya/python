@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{day}} Challenge{% endblock %}
+  
+ {% block body %}
+ <h1 class="text-center text-info bg-secondary">{{day|title}}'s Challenge</h1>
+    {% if text is not None %}
+    <h1 class="m-4 bg-info">{{text}}</h1>
+    {% else %}
+	<p class="text-white">There is no challenge available on this {{day}}  </p>
+	{% endif %}
+ {% endblock %}

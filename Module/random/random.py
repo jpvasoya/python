@@ -1,0 +1,3 @@
+#random module
+import random
+[]

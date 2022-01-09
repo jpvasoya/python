@@ -1,0 +1,35 @@
+
+print('1.add')
+print('2.sub')
+print('3.mul')
+print('4.div')
+d=int(input('select:'))
+def add(a,b):
+	ad=a+b
+	print("add=",ad)
+	return 0
+def sub(a,b):
+	s=a-b
+	print("sub=",s)
+	return
+def mul(a,b):
+	ad=a*b
+	print("mul=",ad)
+	return 0
+def div(a,b):
+	ad=a/b
+	print("add=",float(ad))
+	return 0
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+
+if d==1:
+	add(a,b)
+elif d==2:
+	sub(a,b)
+elif d==3:
+	mul(a,b)
+elif d==4:
+    div(a,b)
+else:
+	print('invalid selected:-)')

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} My Blogs {% endblock %}
+{% block navbar %}{% include 'header.html' %}
+{% endblock %}
+{% block body %} 
+<div><br><br><br></div>
+<h1> Recently added posts</h1>
+{% for post in posts %}
+		{% include 'blog/latest_post.html' %}
+{% endfor %}
+<h1 class="text-center">What can I do?</h1>
+<div class="intro">
+<p>i am a blogger, i'm share to my personal thoughts to the Dogital world.....</p>
+<p>blogs containt to the technology and technical.....</p>
+</div>
+<img src="{% static 'blog/images/home.jpg' %}" class="img-fluid" alt="blog-home-page-images" width='1000px'>
+<div class="about">
+<h1>about us</h1>
+<img src=".." class="img-fluid" alt="my-image">
+<p> My name is......dxmdmmfkfkfkkfkfkfmncncncnfnnffnfnnfnfncncncncncncnfnnfnfnfnfn</p>
+<p>i am .......
+dndnfnfnfnnfntnfnfjnfnfndnnr f f f  f f fnfndjjtnfndnrnjfjdjrjtjfjjrjr</p>
+</div>
+<h2>contact us</h2>
+<div>
+<li>name</li>
+<li>contact</li>
+<li>email</li>
+</div>
+<div>
+<h2>Google Map</h2>
+{% endblock %}

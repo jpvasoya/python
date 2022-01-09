@@ -1,0 +1,16 @@
+from numpy import *
+ls=[1,2,3,4,5]
+arr=array(ls,float)
+print(arr)
+arr1=linspace(0,15,6)
+print(arr1)
+arr2=logspace(0,15,4)
+print(arr2)
+arr3=arange(0,10,2)
+print(arr3)
+arr4=ones(5,int)
+print(arr4)
+arr5=zeros(5,int)
+print(arr5)
+arr=array(ls,str)
+print(arr)

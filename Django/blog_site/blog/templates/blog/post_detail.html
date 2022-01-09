@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{post.post_title|title}}
+{% endblock %}
+{%block navbar %}
+{% include "header.html" %}
+{% endblock %}
+{% block body %} <br><br><br>
+<h1 class="text-center">{{post.post_title|title}}
+</h1>
+{% load static %}
+<div class="row">
+<div class="col-sm-4">
+</div>
+<div class="row mt-4 mb-4 col-sm-4">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'blog/images/'|add:post.post_img %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{post.post_title|title}}
+    </h5>
+    <p class="card-text">{{post.post_details}}</p>
+    <p>Upload date
+    <strong>{{post.date|date:"d M Y"}}</strong>
+    </p>
+    <p><strong>~ Articles By
+    {{post.post_author|title}}</p>
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+</div>
+</div>
+{% endblock %}

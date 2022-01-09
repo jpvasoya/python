@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{title}}
+{% endblock %}
+{% block body %}
+<div class=" mt-1 ">
+<button class="btn btn-dark"><a  href="{% url 'index' %}">back</a></button>
+</div>
+<div class="container">
+<div class=" card bg-dark text-light m-5 p-1">
+<h1>{{title}}</h1>
+<h4>Author By -{{author}}</h4>
+<p>this  book rating -{{rating}}.
+{% if bestSeller %}
+	<u>Its Best Seller. </u>
+{% else %}
+	<u>its not Best Seller.</u>
+{% endif %}
+</p>
+{{desc}}
+</div>
+{% endblock %}

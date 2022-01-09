@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+{% block body %}
+<div class="container">
+<div class="card bg-dark text-light m-5 p-5" >
+ <h1>Books Lists</h1>
+ <ul>
+ {% for book in books %}
+ 	<li><a href="{{ book.get_absolute_urls }}">{{book.title|title}} </a></li>
+ {% endfor %}
+ </ul>
+ </div>
+ </div>
+ {% endblock %}

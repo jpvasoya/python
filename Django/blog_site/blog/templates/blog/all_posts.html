@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}All Posts{% endblock %}
+{%block navbar %}
+{% include "header.html" %}
+{% endblock %}
+{% block body %} <br><br>
+<h1 class="py-4">My All Posts</h1>
+{% for post in posts %}
+   {% include "blog/latest_post.html" %}
+{% endfor %}
+{% endblock %}
+

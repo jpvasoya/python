@@ -1,0 +1,14 @@
+{% load static %}
+<div class="row mt-4 mb-4">
+<div class="col-sm-4">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'blog/images/'|add:post.post_img %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{post.post_title|title}}
+    </h5>
+    <p class="card-text">{{post.post_excerpt}}</p>
+    <a href="{% url 'post_detail_page' post.slug%}" class="btn btn-dark">More Details</a>
+  </div>
+</div>
+</div>
+</div>

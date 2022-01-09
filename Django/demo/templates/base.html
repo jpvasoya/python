@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>{% block title %} {% endblock %}|Demo_Site</title>
+	{% block css_files %}{% endblock %}
+	<link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+	{% block content %} {% endblock %}
+	<footer>
+		<p>Copyright 2009 Your name</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,2 @@
+import add
+add.add()
